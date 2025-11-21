@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="AvaloniaToolbox.Core">
+      <HintPath>..\External\AvaloniaToolbox.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="CommunityToolkit.HighPerformance">
+      <HintPath>..\External\CommunityToolkit.HighPerformance.dll</HintPath>
+    </Reference>
+    <Reference Include="CommunityToolkit.Mvvm">
+      <HintPath>..\External\CommunityToolkit.Mvvm.dll</HintPath>
+    </Reference>
+    <Reference Include="ImageLibrary">
+      <HintPath>..\External\ImageLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SixLabors.ImageSharp">
+      <HintPath>..\External\SixLabors.ImageSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="ZstdSharp">
+      <HintPath>..\External\ZstdSharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
