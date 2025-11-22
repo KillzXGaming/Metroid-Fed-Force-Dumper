@@ -127,6 +127,8 @@ namespace NextLevelLibrary
             LoadHash("lightfield");
             LoadHash("audiobank");
             LoadHash("bank");
+            LoadHash("effecttemplate");
+            LoadHash("collision");
 
 
             if (!hashStrings.ContainsKey(2245049458)) hashStrings.Add(2245049458, "localization");
@@ -134,7 +136,7 @@ namespace NextLevelLibrary
             if (!hashStrings.ContainsKey(3354933275)) hashStrings.Add(3354933275, "materialparams");
             if (!hashStrings.ContainsKey(973535787)) hashStrings.Add(973535787, "shaderconstants");
 
-            foreach (var hashStr in Resources.Resource.MaterialNames.Split('\n'))
+            foreach (var hashStr in Resources.Resource.MaterialNames.Split('\n', StringSplitOptions.TrimEntries))
             {
                 AddHash(StringToHash(hashStr), hashStr);
                 AddHash(StringToHash(hashStr.ToLower()), hashStr.ToLower());
